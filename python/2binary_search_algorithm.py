@@ -16,7 +16,7 @@ def binary_search(list, target):
         # calculating the midpoint
         # using the floor division(//): rounds to the nearest whole number
         midpoint = (first+last)//2
-        print(first)
+        # print(first)
 
         # evaluating whether the value at the midpoint equals the target value
         if list[midpoint]== target:
