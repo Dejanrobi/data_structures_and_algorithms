@@ -1,13 +1,15 @@
 # RECURSIVE BINARY SEARCH
 
+# A recursive function is a function that calls itself.
 # returns true if the value exists and false if it doesn't
 def recursive_binary_search(list, target):
+    print(list)
     # considering if an empty list is passed in
     if len(list) == 0:
         return False
     # Calculating the midpoint
     else:
-        midpoint = len(list)//2
+        midpoint = (len(list))//2
         
         # if current value equals the target
         if list[midpoint] == target:
@@ -30,12 +32,12 @@ def verify(result):
 numbers = [1, 2, 3, 10, 23, 15, 16, 45, 56, 78]
 
 # result after passing the list and target
-result = recursive_binary_search(numbers, 10)
+result = recursive_binary_search(numbers, 1)
 # Verifying the result
 verify(result)
     
 # result after passing the list and target
-result = recursive_binary_search(numbers, 6)
+result = recursive_binary_search(numbers, 10)
 # Verifying the result
 verify(result)
     

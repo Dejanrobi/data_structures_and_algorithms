@@ -14,17 +14,20 @@ def linearSearch(arr, target):
             return i
             break
         
-    return -1
+    return None
         
         
 arr =[3,4,5,6,8,8,9,10]
 # print(linearSearch(arr,6))
 result = linearSearch(arr,9)
 
-verify(result)
+
 # A function to verify
 def verify(index):
-    if(index==-1):
-        print("The value was not found in the list")
+    if(index is not None):
+        print("The value was found at index: ", index)       
     else:
-        print("The value was found at index: ", index)
+        print("The value was not found in the list")
+        
+
+verify(result)

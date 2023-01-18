@@ -1,5 +1,5 @@
 # A binary search function that takes in a list and a target.
-# Works by breaking down a list into smaller sets until we find the value that we are looking for
+# Works by breaking down a list into smaller sets on its midpoints until we find the value that we are looking for
 def binary_search(list, target):
     # We need to keep track of the position of the list that we are working with
     
@@ -51,6 +51,6 @@ numbers = [1, 2, 3, 5, 7, 8, 9, 10, 23]
 # # Verifying whether the value has been found
 # verify(result)
 
-result = binary_search(numbers, 6)
+result = binary_search(numbers, 1)
 # Verifying whether the value has been found
 verify(result)
