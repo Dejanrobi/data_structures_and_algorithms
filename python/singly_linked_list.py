@@ -133,6 +133,21 @@ class LinkedList:
 
         return current
 
+    # returning a node at a given index
+    def node_at_index(self, index):
+        if index == 0:
+            return self.head
+
+        else:
+            current = self.head
+            position = 0
+
+            while position < index:
+                current = current.next_node
+                position += 1
+
+            return current
+
     # Representing our linked list
     def __repr__(self):
         nodes = []
@@ -173,17 +188,17 @@ class LinkedList:
 
 # Checking if the linked list works after adding data
 
-l = LinkedList()
+# l = LinkedList()
 
-l.add(10)
-l.add(2)
-l.add(45)
-l.add(15)
+# l.add(10)
+# l.add(2)
+# l.add(45)
+# l.add(15)
 
-# Searching for 45
-n = l.search(45)
-print(n)
-print(l)
+# # Searching for 45
+# n = l.search(45)
+# print(n)
+# print(l)
 # print(l.size())
 
 # # printing the linked list
