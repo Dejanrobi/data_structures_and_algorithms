@@ -7,12 +7,12 @@
 def selection_sort(values):
     sorted_list = []
     # printing before the loop executes
-    print("%-25s %-25s" % (values, sorted_list))
+    # print("%-25s %-25s" % (values, sorted_list))
     for i in range(0, len(values)):
         index_to_move = index_of_min(values)
         # adding the value to the end of a sorted list
         sorted_list.append(values.pop(index_to_move))
-        print("%-25s %-25s" % (values, sorted_list))
+        # print("%-25s %-25s" % (values, sorted_list))
     return sorted_list
 
 def index_of_min(values):
