@@ -25,6 +25,7 @@ def index_of_min(values):
     return min_index
 
 
+
 # Numbers
 numbers=[3, 45, 10, 34, 15, 5, 23, 9, 10]
 
