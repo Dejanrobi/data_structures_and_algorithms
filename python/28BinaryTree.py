@@ -1,10 +1,9 @@
 # Binary Tree in Python
-
 class Node:
     def __init__(self, key):
         self.left = None
-        self.right = None
-        self.val = key
+        self.right = None 
+        self.val = key 
 
     # Traverse preorder
     def traversePreOrder(self):
@@ -14,7 +13,7 @@ class Node:
         if self.right:
             self.right.traversePreOrder()
 
-    # Traverse inorder
+    # Traverse Inorder
     def traverseInOrder(self):
         if self.left:
             self.left.traverseInOrder()
@@ -22,25 +21,25 @@ class Node:
         if self.right:
             self.right.traverseInOrder()
 
-    # Traverse postorder
+    # Traverse PostOrder
     def traversePostOrder(self):
         if self.left:
             self.left.traversePostOrder()
         if self.right:
             self.right.traversePostOrder()
+
         print(self.val, end=' ')
 
-
 root = Node(1)
-
 root.left = Node(2)
 root.right = Node(3)
-
 root.left.left = Node(4)
 
 print("Pre order Traversal: ", end="")
 root.traversePreOrder()
+
 print("\nIn order Traversal: ", end="")
 root.traverseInOrder()
-print("\nPost order Traversal: ", end="")
+
+print("\nPost Order Traversal: ", end="")
 root.traversePostOrder()
