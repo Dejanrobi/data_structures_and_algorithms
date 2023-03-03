@@ -1,12 +1,9 @@
-# Checking if a binary tree is height balanced in Python
-
+# Checking if a binary tree is height balanced 
 
 class Node:
-
     def __init__(self, data):
         self.data = data
-        self.left = self.right = None
-
+        self.left = self.right = None 
 
 class Height:
     def __init__(self):
@@ -14,12 +11,12 @@ class Height:
 
 
 def isHeightBalanced(root, height):
-
     left_height = Height()
     right_height = Height()
 
     if root is None:
         return True
+    
 
     l = isHeightBalanced(root.left, left_height)
     r = isHeightBalanced(root.right, right_height)
@@ -28,7 +25,6 @@ def isHeightBalanced(root, height):
 
     if abs(left_height.height - right_height.height) <= 1:
         return l and r
-
     return False
 
 
@@ -41,6 +37,6 @@ root.left.left = Node(4)
 root.left.right = Node(5)
 
 if isHeightBalanced(root, height):
-    print('The tree is balanced')
+    print("The tree is balanced")
 else:
-    print('The tree is not balanced')
+    print("The tree is not balanced")
